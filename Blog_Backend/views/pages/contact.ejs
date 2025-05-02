@@ -1,0 +1,110 @@
+<!-- Header-->
+<header class="masthead" style="background-image: url('images/contact-bg.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>Contact Me</h1>
+          <span class="subheading">Have questions? I have answers.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Contact Form Section -->
+<main class="mb-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p class="mb-4 fs-5 text-muted text-center">
+          Fill out the form below and I’ll get back to you as soon as I can!
+        </p>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN" class="bg-light p-4 shadow rounded">
+          <div class="form-group mb-3">
+            <label for="name" class="form-label fw-semibold">Name</label>
+            <input
+              type="text"
+              class="form-control rounded-pill px-4 py-2"
+              id="name"
+              placeholder="Your full name"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="name:required">
+              Name is required.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="email" class="form-label fw-semibold">Email</label>
+            <input
+              type="email"
+              class="form-control rounded-pill px-4 py-2"
+              id="email"
+              placeholder="your@email.com"
+              data-sb-validations="required,email"
+            />
+            <div class="invalid-feedback" data-sb-feedback="email:required">
+              Email is required.
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="email:email">
+              Invalid email format.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="phone" class="form-label fw-semibold">Phone</label>
+            <input
+              type="tel"
+              class="form-control rounded-pill px-4 py-2"
+              id="phone"
+              placeholder="123-456-7890"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="phone:required">
+              Phone number is required.
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea
+              class="form-control rounded-4 px-4 py-3"
+              id="message"
+              rows="5"
+              placeholder="Write your message here..."
+              data-sb-validations="required"
+            ></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">
+              Message is required.
+            </div>
+          </div>
+
+          <!-- Feedback Messages -->
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3 text-success fw-bold">
+              🎉 Form submitted successfully!
+            </div>
+          </div>
+
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">
+              ❌ Something went wrong. Please try again!
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button
+              class="btn btn-primary px-5 py-2 fw-bold rounded-pill"
+              id="submitButton"
+              type="submit"
+            >
+              ✉️ Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+

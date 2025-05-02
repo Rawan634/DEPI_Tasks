@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Task</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <header class="bg-dark text-center py-3 text-light">
+    <h1>Javascript Task</h1>
+  </header>
+
+  <section class="form-section my-5 container w-50 mx-auto">
+    <form>
+      <div class="form-group my-2">
+        <label for="title" class="fw-bold">Course Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group my-2">
+        <label for="slug" class="fw-bold">Course Slug</label>
+        <input type="text" id="slug" class="form-control">
+      </div>
+      <div class="form-group my-2">
+        <label for="courseType" class="fw-bold">Course Type</label>
+        <input type="text" id="courseType" class="form-control">
+      </div>
+      <div class="form-group my-2">
+        <label for="courseId" class="fw-bold">Course ID</label>
+        <input type="text" id="courseId" class="form-control">
+      </div>
+      <input type="submit" value="Add Course" class="btn btn-dark">
+    </form>
+
+    <button id="fetch-courses" class="btn btn-primary mt-3 w-100">Load Coursera Courses</button>
+  </section>
+
+  <section class="my-5 w-75 container text-center mx-auto">
+    <div class="bg-light py-3">
+      <h2>All Courses</h2>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Slug</th>
+          <th>Type</th>
+          <th>ID</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+</html>

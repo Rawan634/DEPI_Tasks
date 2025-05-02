@@ -1,0 +1,36 @@
+dependencies 
+express ejs express-ejs-layouts
+dev-dependency 
+nodemon dotenv
+
+====================  Break Time :) ===================
+
+db                mongodb nosql   => document Oriented Database 
+tables            collections
+rows              documents  
+columns           fields
+
+static schema   
+
+id name age
+1  ""     20
+2  null    null
+folder
+file BSON DOCUMENT
+{
+    _id : 1 , 
+    title : "" , 
+    desc : ""
+}
+{
+    _id : 1 , 
+   "title" : ""
+}
+
+
+users   posts
+relationship 
+- One To One 
+- One To Many
+- Many to Many
+- **self referencing relationship

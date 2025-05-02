@@ -1,0 +1,30 @@
+Quiz JavaScript Advanced Quiz
+
+1) 6
+   8
+
+2) true
+
+3) 1
+   2
+   3
+
+4) Oh noes!
+
+5) 20
+   NaN => this.redius is undefined
+
+6) Error 
+
+7) Error
+
+8) true
+   true
+   false
+   true
+
+9) Lydia is 21
+
+
+10) undefined
+    number

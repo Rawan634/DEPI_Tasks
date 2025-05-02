@@ -1,0 +1,15 @@
+<div class="text-center my-5">
+    <h2> Employee Details </h2>
+    <div class="alert alert-info w-50 mx-auto py-2 fs-4">
+        <p>Employee ID: <%= employee.empId %></p>
+        <p>Name: <%= employee.name %></p>
+        <p>Address: <%= employee.address %></p>
+        <p>Salary: <%= employee.salary %></p>
+        <p>Gender: <%= employee.gender %></p>
+        <div class="info">
+            Created At: <%= employee.createdAt.toDateString() %>
+        </div>
+
+        <a href="/" class="btn btn-dark mt-3">Return to Employees</a>
+    </div>
+</div>
