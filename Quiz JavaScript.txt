@@ -1,0 +1,7 @@
+Quiz JavaScript :
+
+const arr = [4, 8, 10, 6];
+
+const multiply = arr.reduce((mul, num) => mul * num, 1);
+
+console.log(product);
